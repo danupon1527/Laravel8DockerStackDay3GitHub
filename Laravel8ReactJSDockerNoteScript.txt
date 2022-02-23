@@ -330,12 +330,10 @@ docker-compose exec app php artisan ui vue --auth
 
 Step 3: ติดตั้ง NPM Dependencies
 ---
-docker-compose exec npm install vue-loader@^15.9.7 --save-dev --legacy-peer-deps
-docker-compose exec app npm install
+docker-compose exec app npm i vue-loader
 
 Step 4: ทำการ Compile และ Run แอพ
 ---
-docker-compose exec app npm run dev
 docker-compose exec app npm run watch
 
 Step 5: ทดสอบเรียกหน้า login และ register
